@@ -1,0 +1,4 @@
+<section class="vh-100 gradient-custom">
+  <app-login class="template-login fade" [class.show]="currentState === 'login'" (signup)="toggleTemplate()"></app-login>
+  <app-register class="template-register fade" [class.show]="currentState === 'signup'" (login)="toggleTemplate()"></app-register>
+</section>

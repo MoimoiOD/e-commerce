@@ -1,0 +1,46 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+}
+
+.template-login {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.template-register {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.template-login, .template-register {
+  opacity: 0;
+  transform: translateY(10px);
+  position: absolute;
+  width: 100%;
+}
+
+.template-login.show {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+
+.template-register.show {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  transition-delay: 0.5s;
+}
